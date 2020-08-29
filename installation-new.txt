@@ -162,6 +162,11 @@ kubectl describe pod/database -n twitter
 check the directory has been created to that node
 
 https://github.com/kkaruna9/krishna-kubernetes/blob/master/pod/4-multistorage.yml
+
+kubectl exec -it pod/db bash -n vijay -c web
+kubectl exec -it pod/db bash -n vijay -c db
+
+
 https://github.com/kkaruna9/krishna-kubernetes/blob/master/pod/5-full.yaml
 ********************************************************************************************
 find out the below yaml file is deployed to which name space
