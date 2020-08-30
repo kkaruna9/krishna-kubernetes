@@ -5,7 +5,7 @@ kubectl get rs --show-labels -n facebook
 kubectl get deploy,pods,rs -n facebook
 kubectl rollout status deployment/nginx -n facebook
 kubectl get pods --show-labels -n facebook
-kubectl scale deployment/nginx --replicas=12 --> to increase your replicas
+kubectl scale deployment/nginx --replicas=12 -n facebook --> to increase your replicas
 kubectl edit deployment.apps/nginx -n facebook --> go and increase replicas count and save >--- then immedietly run the below command
 kubectl rollout status deployment/nginx
 kubectl edit deploy/nginx
